@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiber</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!--Inter Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HERO SECTION-->
+    <section class="bg-beige">
+      <!--NAV BAR-->
+      <nav class="flex flex-row justify-between pt-5">
+        <h1 class="text-xl font-bold ml-10">Fiber</h1>
+        <!--Links-->
+        <div class="hidden md:flex md:flex-row">
+          <div class="links-container space-x-12">
+            <a href="#">Community</a>
+            <a href="#">Pricing</a>
+            <a href="#">Features</a>
+          </div>
+        </div>
+        <!--Sign-in & Sign-up-->
+        <div class="md:flex md:flex-row md:-mr-28 md:justify-between md:-mt-2 hidden">
+          <div class="si-su">
+            <button
+              class="bg-transparent justify-between p-2 font-bold hover:text-grey"
+            >
+              Sign In
+            </button>
+            <button
+              class="bg-violet rounded-md text-white p-2 hover:bg-lightViolet"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+        <!--Hamburger Menu-->
+        <div class="hamburger mr-10" id="ham"></div>
+      </nav>
+      <section>
+        <div id="open-hamburger" class="bg-white mt-4 flex flex-col w-3/4 mx-auto p-10 hidden text-center">
+          <a href="#" class="hover:underline">Community</a>
+          <a href="#" class="hover:underline">Pricing</a>
+          <a href="#" class="hover:underline">Features</a>
+          <button
+              class="bg-transparent justify-between p-2 font-bold hover:text-grey"
+            >
+              Sign In
+            </button>
+            <button
+              class="bg-violet rounded-md text-white p-2 hover:bg-lightViolet"
+            >
+              Sign Up
+            </button>
+        </div>
+        
+      </section>
+
+      <!--HERO ILLUSTRATION-->
+      <div class="container-hero flex md:flex-row flex-col-reverse">
+        <div class="ratings-and-desc flex flex-col pl-20 pr-20">
+          <!--Stars/rating-->
+          <div class="hidden md:flex md:flex-row mt-40 space-x-1 pl-2">
+            <img src="./Assets/star.svg" alt="" class="w-4" />
+            <img src="./Assets/star.svg" alt="" class="w-4" />
+            <img src="./Assets/star.svg" alt="" class="w-4" />
+            <img src="./Assets/star.svg" alt="" class="w-4" />
+            <img src="./Assets/star.svg" alt="" class="w-4" />
+            <p class="pl-3">Rated 4.8/5.0 (243 Reviews)</p>
+          </div>
+          <h1 class="font-bold text-6xl">Create your portfolio in minutes.</h1>
+          <p class="text-grey mt-2">
+            With Fiber, you can create your portfolio in minutes with premade,
+            beautiful templates.
+          </p>
+          <div class="flex flex-col md:flex-row md:space-x-4 mt-4 space-y-3">
+            <button
+              class="w-360 md:w-40 p-3 bg-violet rounded-md text-white cursor-pointer hover:bg-lightViolet"
+            >
+              Start Free Trial
+            </button>
+            <button
+              class="w-360 md:w-40 cursor-pointer text-violet underline font-bold hover:text-lightViolet p-3 bg-transparent"
+            >
+              View Examples
+            </button>
+          </div>
+          <!--No CC reqd-->
+          <div
+            class="flex flex-col md:flex-row mt-4 md:space-x-4"
+            id="checkFeatures"
+          >
+            <div class="flex flex-row space-x-1">
+              <img src="./Assets/Checkmark.svg" alt="" class="w-5" />
+              <p class="text-grey">No Credit Card Required</p>
+            </div>
+            <div class="flex flex-row space-x-1">
+              <img src="./Assets/Checkmark.svg" alt="" class="w-5" />
+              <p class="text-grey">10 Free Templates</p>
+            </div>
+          </div>
+        </div>
+        <!--Hero SVG-->
+        <div class="img-container">
+          <img
+            src="./Assets/hero-Illustration.png"
+            alt=""
+            class="sm:mt-4 md:mt-32 lg:mt-4"
+          />
+        </div>
+      </div>
+      <!--Empty Div to Expand Beige Color-->
+      <div class="h-24"></div>
+    </section>
+
+    <!--WHY FIBER-->
+    <section class="p-20">
+      <h3 class="text-violet font-bold">Why Fiber?</h3>
+      <h1 class="text-4xl font-bold mt-4">
+        A good portfolio means good <br />employability.
+      </h1>
+      <div class="flex flex-col md:flex-row md:space-x-5">
+        <div class="flex flex-col mt-10">
+          <img src="./Assets/time.svg" alt="" class="w-8" />
+          <h1 class="text-sm font-bold mt-4">Build in minutes</h1>
+          <p class="text-grey mt-4">
+            With a section of premade templates, you can build out a portfolio
+            in 10 minutes.
+          </p>
+        </div>
+        <div class="flex flex-col mt-10">
+          <img src="./Assets/code.svg" alt="" class="w-8" />
+          <h1 class="text-sm font-bold mt-4">Add custom CSS</h1>
+          <p class="text-grey mt-4">
+            With a section of premade templates, you can build out a portfolio
+            in 10 minutes.
+          </p>
+        </div>
+        <div class="flex flex-col mt-10">
+          <img src="./Assets/allSizes.svg" alt="" class="w-8" />
+          <h1 class="text-sm font-bold mt-4">Responsive</h1>
+          <p class="text-grey mt-4">
+            All Fiber templates are fully responsive to ensure the experience is
+            seemless across all devices.
+          </p>
+        </div>
+      </div>
+      <!--SELF AD KINDA-->
+      <div
+        class="flex flex-col md:flex-row bg-violet pr-10 pt-10 pl-10 rounded-lg mt-16"
+      >
+        <div class="flex flex-col">
+          <h1 class="font-bold text-3xl text-white md:mt-16">
+            Diversify your portfolio.
+          </h1>
+          <p class="mt-2 text-gray-200 mb-4">
+            Create an even more impressive portfolio by creating case studies
+            for your projects. Simply follow our step-by-step guide.
+          </p>
+          <button
+            class="bg-white text-violet p-3 w-50 rounded-md md:mr-10 mb-10 hover:bg-gray-200"
+          >
+            Start your free trial
+          </button>
+        </div>
+        <div>
+          <img src="/Assets/PageImage.png" alt="" class="rounded-sm md:mt-16 md:ml-4" />
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="p-20">
+      <!--All testimonials container-->
+      <div class="flex flex-col md:flex-row md:space-x-4" id="testimonials">
+        <!--Testimony 1-->
+        <div class="flex flex-col border-2 rounded-md p-8">
+          <div class="flex flex-row justify-start space-x-4">
+            <img src="./Assets/UserAvatar.svg" alt="" />
+            <div class="flex flex-col">
+              <h1 class="text-sm font-bold text-violet mt-1">Sarah Andrews</h1>
+              <p class="text-grey">$100k in revenue</p>
+            </div>
+          </div>
+          <p class="mt-4">
+            Setting up my portfolio with Fiber took no more than 10 minutes.
+            Since then, my portfolio has attracted a lot of clients and made me
+            more than $100k.
+          </p>
+          <button
+            class="border-2 font-bold text-violet hover:text-lightViolet h-12 rounded-md mt-4"
+          >
+            View Sarah's Portfolio
+          </button>
+        </div>
+        <!--Testimony 2-->
+        <div class="flex flex-col border-2 rounded-md p-8">
+          <div class="flex flex-row justify-start space-x-4">
+            <img src="./Assets/UserAvatar2.svg" alt="" />
+            <div class="flex flex-col">
+              <h1 class="text-sm font-bold text-violet mt-1">Mathew Higgins</h1>
+              <p class="text-grey">$20k in revenue</p>
+            </div>
+          </div>
+          <p class="mt-4">
+            I have been getting A LOT of leads ever since I used Fiber's premade
+            templates, now I just need to work on my case studies and I'll be
+            ready to go!
+          </p>
+          <button
+            class="border-2 font-bold text-violet hover:text-lightViolet h-12 rounded-md mt-4"
+          >
+            View Mathew's Portfolio
+          </button>
+        </div>
+        <!--Testimony 3-->
+        <div class="flex flex-col border-2 rounded-md p-8">
+          <div class="flex flex-row justify-start space-x-4">
+            <img src="./Assets/UserAvatar3.svg" alt="" />
+            <div class="flex flex-col">
+              <h1 class="text-sm font-bold text-violet mt-1">Janice Dave</h1>
+              <p class="text-grey">$30k in revenue</p>
+            </div>
+          </div>
+          <p class="mt-4">
+            I only started freelancing this year and I have already made more
+            than I ever made in my full-time job. The templates are just so
+            amazing.
+          </p>
+          <button
+            class="border-2 font-bold text-violet hover:text-lightViolet h-12 rounded-md mt-4"
+          >
+            View Janice's Portfolio
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="bg-beige p-20">
+      <!--Everything in this container-->
+      <div class="flex md:flex-row flex-col md:space-x-14" id="Footer-Elements">
+        <!--Fiber About-->
+        <div class="flex flex-col">
+          <h3 class="text-lg font-bold">Fiber</h3>
+          <p class="text-grey sm:mt-4 md:mt-8">
+            With Fiber, you can create your portfolio in minutes with premade,
+            beautiful templates.
+          </p>
+          <p class="text-grey mt-4">Made with &hearts; in Netherlands.</p>
+        </div>
+        <!--Sitemap-->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-bold mb-2">Sitemap</h3>
+          <a href="#" class="text-grey hover:underline">Homepage</a>
+          <a href="#" class="text-grey hover:underline">Pricing</a>
+          <a href="#" class="text-grey hover:underline">Testimonials</a>
+          <a href="#" class="text-grey hover:underline">Features</a>
+        </div>
+        <!--Resources-->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-bold mb-2">Resources</h3>
+          <a href="#" class="text-grey hover:underline">Support</a>
+          <a href="#" class="text-grey hover:underline">Contact</a>
+          <a href="#" class="text-grey hover:underline">FAQ</a>
+        </div>
+        <!--Company-->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-bold mb-2">Commpany</h3>
+          <a href="#" class="text-grey hover:underline">About</a>
+          <a href="#" class="text-grey hover:underline">Customers</a>
+          <a href="#" class="text-grey hover:underline">Blog</a>
+        </div>
+        <!--Portfolios-->
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-lg font-bold mb-2">Portfolios</h3>
+          <a href="#" class="text-grey hover:underline">Sarah Andrews</a>
+          <a href="#" class="text-grey hover:underline">Mathew Higgins</a>
+          <a href="#" class="text-grey hover:underline">Janice Dave</a>
+        </div>
+      </div>
+    </footer>
+    <div class="h-10 bg-white block">
+      <p class="text-center my-auto">
+        Design Credits -
+        <a href="https://codewell.cc" target="_blank" class="hover:underline"
+          >Codewell</a
+        >
+      </p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

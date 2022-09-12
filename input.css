@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width: 767px){
+    .hamburger{
+        background-image: url(./Assets/HamburgerMenu.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 560px){
+    #checkFeatures{
+        @apply space-y-3;
+    }
+}
+
+@media (max-width: 760px){
+    #testimonials{
+        @apply space-y-4;
+    }
+}
+
+@media (max-width: 760px){
+    #Footer-Elements{
+        @apply space-y-12;
+    }
+}
+
+@media (min-width: 768px) {
+    #open-hamburger{
+        @apply hidden;
+    }
+}
